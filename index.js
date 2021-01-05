@@ -1,3 +1,5 @@
+let port = process.env.PORT || 8000;
+
 const express = require('express')
 const mysql = require('mysql')
 const app = express();
@@ -11,7 +13,6 @@ const con = mysql.createConnection({
    database: "samplejs"
 });
 
-let port = process.env.PORT || 8000;
 
 function requestNew() {
   
