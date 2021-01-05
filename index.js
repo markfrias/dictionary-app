@@ -54,9 +54,9 @@ con.connect(function(err) {
 });
 
 
-
+// Set response for landing page
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.end('<h1>Hello World!</h1>')
   
 });
 
