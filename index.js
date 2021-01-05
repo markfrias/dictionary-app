@@ -12,7 +12,7 @@ const con = mysql.createConnection({
    database: "samplejs"
 });
 
-const port = process.env.PORT;
+let port = process.env.PORT || 8000;
 
 function requestNew() {
   
