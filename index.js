@@ -4,20 +4,19 @@ const express = require('express')
 const mysql = require('mysql')
 const app = express();
 
-
-// Create a MySQL connection
+/* Create a MySQL connection
 const con = mysql.createConnection({
    host: "localhost",
    user: "root",
    password: "",
    database: "samplejs"
 });
+*/
 
-
-function requestNew() {
+/*function requestNew() {*/
   
   
-  let data;
+  /*let data;
   con.query("SELECT * FROM words", function (err, results) {
       if (err) throw err;
       console.log("Result: " + results);
@@ -53,13 +52,14 @@ con.connect(function(err) {
    
 });
 
-
+*/
 // Set response for landing page
 app.get('/', (req, res) => {
   res.end('<h1>Hello World!</h1>')
   
 });
 
+/*
 // Fetch query results from database
 app.get('/data', (req, res) => {
 
@@ -79,7 +79,7 @@ app.get('/data', (req, res) => {
 
   
 })
-
+*/
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`)
 });
